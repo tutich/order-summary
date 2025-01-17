@@ -13,3 +13,7 @@
     box-sizing: border-box;
     font-family: "Red Hat Text", serif;
 }
+
+body {
+    background-image: "./pattern-background-desktop.svg";
+}
