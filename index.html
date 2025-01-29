@@ -11,35 +11,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@500,700,900;500,700,900&family=Red+Hat+Text:ital,wght@500,700,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@500,700,900&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div>
-        <section>
-            <h2>Order Summary</h2>
-            <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
-        </section>
-        <section>
-            <div>
-                <img src="./images/icon-music.svg" alt="music-icon">
-                <div>
-                    <p>Annual Plan</p>
-                    <span>$59.99/year</span>
-                </div>
-            </div>
-            <div>
-                <button>Change</button>
-            </div>
-        </section>
-        <section>
-            <button>Proceed to Payment</button>
-            <button>Cancel Order</button>
-        </section>
+    <div class="container">
 
+        <picture>
+            <source srcset="./images/pattern-background-mobile.svg" media="(max-width: 375px)" />
+            <source srcset="./images/pattern-background-desktop.svg" media="(min-width: 769px)" />
+            <img src="./images/pattern-background-desktop.svg" alt="pattern-background-desktop" class="background" />
+        </picture>
+        <div class="card">
+            <section>
+                <div class="hero">
+                    <img src="./images//illustration-hero.svg" alt="hero"  class="heroimg"/>
+                </div>
+            </section>
+            <div class="content">
+                <section class="about">
+                    <h2>Order Summary</h2>
+                    <p>You can now listen to millions of songs,<br> audiobooks, and podcasts on any device <br> anywhere you like!
+                    </p>
+                </section>
+                <section class="trans">
+                    <div class="plan">
+                        <img src="./images/icon-music.svg" alt="music-icon" class="icon">
+                        <div>
+                            <p>Annual Plan</p>
+                            <span>$59.99/year</span>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#">Change</a>
+                    </div>
+                </section>
+                <section class="buttons">
+                    <button class="pay">Proceed to Payment</button>
+                    <button class="cancel">Cancel Order</button>
+                </section>
+            </div>
+
+        </div>
     </div>
 </body>
 
